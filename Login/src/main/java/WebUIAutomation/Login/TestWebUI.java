@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.Test;
+import java.time.*;
 
 public class TestWebUI {
 
@@ -17,7 +18,7 @@ public class TestWebUI {
                 browser.get("https://www.saucelabs.com");
             WebElement href = browser.findElement(By.xpath("//a[@href='/beta/login']"));
                 assertTrue((href.isDisplayed()));
-
+            System.currentTimeMillis();
                browser.close();       
 
 }
